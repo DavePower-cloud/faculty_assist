@@ -65,6 +65,8 @@ Faculty can enter a clinical condition or query to receive:
 - Redirect behaviour for unsupported conditions  
 - No autonomous decision-making  
 - **Human-in-the-loop control at all times**
+  
+![Live Image 1](faculty_assist_output4.PNG)
 
 ---
 
@@ -82,6 +84,8 @@ The system generates a structured scaffold aligned with the **PEARLS framework**
 - targeted teaching points  
 - take-home messages  
 - optional **5-minute debrief format**
+
+![Debrief Image 1](faculy_assist_output1.PNG)
 
 ---
 
@@ -119,8 +123,8 @@ This reflects a **design-based research approach** grounded in practical deploym
 
 This project builds on broader research into **multi-agent and generative AI systems in clinical simulation**:
 
-- *Can Large Language Models Simulate the Clinical Conversation? A Multi-Agent Approach*  
-  [Insert preprint link]
+- Power, D., & Power, T. (2026). *Can Large Language Models Simulate the Clinical Conversation? A Multi-Agent Approach*  
+  https://doi.org/10.35542/osf.io/etv6d_v1
 
 ---
 
@@ -128,10 +132,10 @@ This project builds on broader research into **multi-agent and generative AI sys
 
 A short report describing this work is currently under review:
 
-**Generative AI Support for Faculty During Live Simulation**  
-Journal of Healthcare Simulation (JoHS)
+- Power, D. (2026). *Generative AI Support for Faculty During Live Simulation*  
 
-Preprint: [Insert link]
+
+Preprint: [TODO]
 
 ---
 
