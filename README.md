@@ -24,6 +24,7 @@ This tool provides **just-in-time support** during live simulation and structure
 👉 **Try the live application:**  
 https://huggingface.co/spaces/2O24dpower2024/faculty-assist
 
+![HF Demo Image](faculty_assist_hugging_face_demo.PNG)
 ---
 
 ## 🎯 Motivation
@@ -105,6 +106,14 @@ This system was evaluated as a **feasibility and usability pilot** during emerge
 
 Evaluation was based on **faculty feedback during real-world use**, consistent with iterative design approaches in simulation-based education.
 
+- Iteratively tested with simulation faculty (n ≈ 12 full day sessions)
+- Positive perceived utility for:
+  - junior faculty support
+  - debrief structuring
+- Future work:
+  - formal usability study
+  - impact on debrief quality
+
 ---
 
 ## 🔁 Iterative Development
@@ -116,6 +125,42 @@ The system was refined in real time across multiple simulation sessions, with:
 - interface improvements  
 
 This reflects a **design-based research approach** grounded in practical deployment.
+
+---
+
+## 🧪 Example Use Cases
+
+### Live Simulation Support
+Input:
+"anaphylaxis"
+
+Output:
+- Immediate priorities
+- Drug dosing (if grounded)
+- Escalation prompts
+- Faculty facilitation cues
+
+### Debrief Support
+Input:
+"learner missed early sepsis recognition"
+
+Output:
+- PEARLS scaffold
+- Advocacy–Inquiry prompts
+- CRM-linked discussion points
+
+---
+
+## 🧠 System Overview
+
+- LLM: GPT-4o-mini
+- Tool use: EMED retrieval
+- Guardrails:
+  - allowlist conditions
+  - no dosing unless grounded
+- Modes:
+  - Live (real-time support)
+  - Debrief (PEARLS scaffold)
 
 ---
 
@@ -148,9 +193,42 @@ This work forms part of an ongoing research programme focused on:
 - structured communication and escalation  
 - simulation faculty support tools  
 
----
+
+
 
 ## 📜 Citation
 
-If you use this work in academic settings, please consider citing the associated research:
+If you use this work, please consider citing the associated research:
+[TODO]
+
+---
+
+## 🧠 System Architecture
+
+```mermaid
+flowchart TD
+
+A[👨‍⚕️ Faculty User] --> B[Gradio UI]
+
+B --> C{Mode Router}
+
+C -->|Live Mode| D[Condition Detection]
+C -->|Debrief Mode| E[Context Builder]
+
+D --> F[Tool Call: EMED Lookup]
+F --> G[Allowlist + Safety Guardrails]
+
+E --> H[Chat History Summarisation]
+
+G --> I[LLM: GPT-4o-mini]
+H --> I
+
+I --> J[Structured Output Generator]
+
+J --> K[Live: Clinical Support Output]
+J --> L[Debrief: PEARLS Scaffold]
+
+K --> M[UI Display]
+L --> M
+
 
