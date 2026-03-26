@@ -165,46 +165,6 @@ Output:
 
 ---
 
-## 📄 Related Work
-
-This project builds on broader research into **multi-agent and generative AI systems in clinical simulation**:
-
-- Power, D., & Power, T. (2026). *Can Large Language Models Simulate the Clinical Conversation? A Multi-Agent Approach*  
-  https://doi.org/10.35542/osf.io/etv6d_v1
-
----
-
-## 📖 Preprint
-
-A short report describing this work is currently under review:
-
-- Power, D. (2026). *Generative AI Support for Faculty During Live Simulation*  
-
-
-Preprint: *under review — available on request*
-
----
-
-## 🧠 Research Context
-
-This work forms part of an ongoing research programme focused on:
-
-- AI-supported clinical simulation  
-- multi-agent LLM systems  
-- structured communication and escalation  
-- simulation faculty support tools  
-
-
-
-
-## 📜 Citation
-
-If you use this work, please consider citing the associated research:
-
-Power, D. (2026). *Generative AI Support for Faculty During Live Simulation.* (Under review)
-
----
-
 ## 🧠 System Architecture
 
 The system integrates a large language model with tool-based retrieval and structured prompting to support faculty across both live simulation and debrief phases.
@@ -236,7 +196,64 @@ J --> L[Debrief: PEARLS Scaffold]
 
 K --> M[UI Display]
 L --> M
+```
 
+---
+
+## 📄 Related Work
+
+This project builds on broader research into **multi-agent and generative AI systems in clinical simulation**:
+
+- Power, D., & Power, T. (2026). *Can Large Language Models Simulate the Clinical Conversation? A Multi-Agent Approach*  
+  https://doi.org/10.35542/osf.io/etv6d_v1
+
+---
+
+## 📖 Preprint
+
+A short report describing this work is currently under review:
+
+- Power, D. (2026). *Generative AI Support for Faculty During Live Simulation*  
+
+
+Preprint: *under review — available on request*
+
+---
+
+## 🧠 Research Context
+
+This work forms part of an ongoing research programme focused on:
+
+- AI-supported clinical simulation  
+- multi-agent LLM systems  
+- structured communication and escalation  
+- simulation faculty support tools  
+
+## 📜 Citation
+
+If you use this work, please consider citing the associated research:
+
+Power, D. (2026). *Generative AI Support for Faculty During Live Simulation.* (Under review)
+
+---
+
+
+## 📜 Licensing
+
+- Code is released under the MIT License
+- Dataset is released under CC BY 4.0
+
+Please cite appropriately when using the dataset.
+
+---
+
+## 👤 Author
+
+David Power  
+Healthcare Simulation Specialist | MSc Artificial Intelligence  
+
+- 💼 LinkedIn: https://www.linkedin.com/in/dave-power-47280a44/  
+- 💻 GitHub: https://github.com/DavePower-cloud
 
 
 
