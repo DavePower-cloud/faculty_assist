@@ -2,6 +2,7 @@
 
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-Live%20App-yellow)](https://huggingface.co/spaces/2O24dpower2024/faculty-assist)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-black)](https://github.com/DavePower-cloud/faculty_assist)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.19224182-blue)](https://doi.org/10.5281/zenodo.19224182)
 
 ---
 
@@ -180,7 +181,7 @@ A short report describing this work is currently under review:
 - Power, D. (2026). *Generative AI Support for Faculty During Live Simulation*  
 
 
-Preprint: [TODO]
+Preprint: *under review — available on request*
 
 ---
 
@@ -199,11 +200,16 @@ This work forms part of an ongoing research programme focused on:
 ## 📜 Citation
 
 If you use this work, please consider citing the associated research:
-[TODO]
+
+Power, D. (2026). *Generative AI Support for Faculty During Live Simulation.* (Under review)
 
 ---
 
 ## 🧠 System Architecture
+
+The system integrates a large language model with tool-based retrieval and structured prompting to support faculty across both live simulation and debrief phases.
+
+**Figure 1.** System architecture of a large language model–augmented assistant designed to support faculty during clinical simulation. User input is routed via a mode selection layer to either (1) live clinical support, incorporating condition parsing, tool-based retrieval from a curated knowledge source (EMED), and safety guardrails, or (2) debrief support, incorporating chat history summarisation. Both pathways interface with a large language model (GPT-4o-mini) to generate structured outputs tailored to simulation delivery or PEARLS-aligned debriefing. Outputs are formatted and returned to the user interface. EMED: www.emed.ie; PEARLS: Promoting Excellence And Reflective Learning in Simulation.
 
 ```mermaid
 flowchart TD
@@ -230,5 +236,7 @@ J --> L[Debrief: PEARLS Scaffold]
 
 K --> M[UI Display]
 L --> M
+
+
 
 
