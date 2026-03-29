@@ -216,7 +216,7 @@ A short report describing this work is currently under review:
 - Power, D. (2026). *Generative AI Support for Faculty During Live Simulation*  
 
 
-Preprint: *under review — available on request*
+https://doi.org/10.35542/osf.io/p3fyc_v1
 
 ---
 
